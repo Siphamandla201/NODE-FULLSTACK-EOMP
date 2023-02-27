@@ -1,0 +1,26 @@
+{
+  "name": "node-fullstack-eomp",
+  "version": "1.0.0",
+  "description": "full-stack point-of-sales project backend",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Siphamandla201/NODE-FULLSTACK-EOMP.git"
+  },
+  "author": "Siphamandla Mlanjana",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Siphamandla201/NODE-FULLSTACK-EOMP/issues"
+  },
+  "homepage": "https://github.com/Siphamandla201/NODE-FULLSTACK-EOMP#readme",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "mysql": "^2.18.1"
+  }
+}
