@@ -14,13 +14,10 @@ app.use(cors(corsOption));
 app.use(express.urlencoded({extended:true}));
 
 app.get('/', (err, req, res) => {
-    if(err) throw err; 
-    else {
     res.status(200)
     res.json({
         message : "you are connected"
     })
-    }
 });
 
 app.listen(port, (req, res) =>{
