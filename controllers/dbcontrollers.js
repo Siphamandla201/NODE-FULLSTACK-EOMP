@@ -11,8 +11,12 @@ const user = new Users();
 router.get("/", (req, res) => {
   res.status(200).json({ msg: "Welcome to life choices" });
 });
-router.post("/signup", bodyParser,(req, res) => {
+router.post("/signup", bodyParser.json(), (req, res) => {
   user.createUser(req, res);
+});
+
+router.post("/login", bodyParser.json(), (req, res) => {
+  user.login(req, res);
 });
 
 router.get("/users/:username", (req, res) => {
@@ -27,7 +31,7 @@ router.delete("/users/:username", (req, res) => {
   user.deleteUser(req, res);
 });
 
-router.put("/users/:username",bodyParser, (req, res) => {
+router.put("/users/:username", bodyParser.json(), (req, res) => {
   user.updateUser(req, res);
 });
 
